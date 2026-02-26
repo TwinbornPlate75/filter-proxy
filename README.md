@@ -49,6 +49,27 @@ HTTP/HTTPS过滤代理
    CONFIG_FILE=custom_config.json python server.py
    ```
 
+### Linux 系统服务安装
+
+支持通过 systemd 实现开机自启：
+
+1. 运行安装脚本：
+   ```
+   sudo ./install.sh
+   ```
+
+2. 启动服务：
+   ```
+   sudo systemctl start filter-proxy
+   ```
+
+3. 查看状态：
+   ```
+   sudo systemctl status filter-proxy
+   ```
+
+安装后文件位于 `/opt/filter-proxy/`，配置文件为 `/opt/filter-proxy/config.json`。
+
 ## 过滤规则说明
 
 每条规则包含以下属性：
