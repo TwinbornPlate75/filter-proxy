@@ -49,14 +49,6 @@ HTTP/HTTPS过滤代理
    CONFIG_FILE=custom_config.json python server.py
    ```
 
-### Docker
-
-支持使用Docker镜像快速部署。
-
-```bash
-docker run --name filter-proxy -p 22223:22223 -p 22224:22224 -d ghcr.io/chenxiex/filter-proxy
-```
-
 ## 过滤规则说明
 
 每条规则包含以下属性：
